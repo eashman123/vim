@@ -55,6 +55,9 @@ install_package fzf
 install_package build-essential cc
 install_package tealdeer tldr "cargo install tealdeer"
 
+# Install Termium
+install_package termium termium "curl -L https://github.com/Exafunction/codeium/releases/download/termium-v0.2.1/install.sh | bash"
+
 # Check if Oh My Zsh is installed
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   # Install oh-my-zsh if not installed
@@ -69,5 +72,5 @@ echo "Symlinking dotfiles..."
 stow --adopt .
 
 # Print message
-echo "Please check for any changed files in dotfiles/ and accept/reject changes."
+echo "Please check for any changed files in dotfiles/ and accept/reject changes. Then, restart your terminal"
 
